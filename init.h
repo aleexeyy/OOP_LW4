@@ -2,9 +2,9 @@
 #define INIT_H
 
 #include <SDL.h>
+#include <string>
 #include <iostream>
 #include <SDL_ttf.h>
-#include <string>
 
 const int Height = 640;
 const int Width = 800;

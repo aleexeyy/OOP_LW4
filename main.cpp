@@ -1,5 +1,5 @@
-#include "classes.cpp"
 #include "init.h"
+#include "classes.h"
 
 
 int main() {
@@ -40,6 +40,9 @@ int main() {
                     menu.deleteSymbol();
                 }
             }
+        }
+        if (currentState == GAME && gameField->get_bot() == 0) {
+            gameField->bot_move();
         }
         switch (currentState) {
             case MENU:
